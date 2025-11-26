@@ -30,6 +30,7 @@ app.use(
     origin: [
       "http://localhost:3000",
       "https://unenjoying-addorsed-mica.ngrok-free.dev",
+      "https://real-time-chat-iqnw.vercel.app",
     ],
     credentials: true,
   })
