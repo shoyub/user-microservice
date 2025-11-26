@@ -22,7 +22,7 @@ const loginLimiter = rateLimit({
 // Rate limiting for verify
 const verifyLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 3, // limit each IP to 3 requests per windowMs
+  max: 100, // limit each IP to 3 requests per windowMs
   message: "Too many verification attempts, please try again later.",
 });
 
