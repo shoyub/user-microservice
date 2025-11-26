@@ -1,7 +1,7 @@
+import { redisClient } from "../../index.js";
 import { generateToken } from "../config/generateToken.js";
 import { publishToQueue } from "../config/rabbitmq.js";
 import TryCatch from "../config/TryCatch.js";
-import { redisClient } from "../index.js";
 import { User } from "../model/User.js";
 export const loginUser = TryCatch(async (req, res) => {
     const { email } = req.body;

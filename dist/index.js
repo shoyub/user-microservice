@@ -1,10 +1,10 @@
 import express from "express";
 import dotenv from "dotenv";
-import connectDb from "./config/db.js";
 import { createClient } from "redis";
-import userRoutes from "./routes/user.js";
-import { connectRabbitMQ } from "./config/rabbitmq.js";
 import cors from "cors";
+import connectDb from "./src/config/db.js";
+import { connectRabbitMQ } from "./src/config/rabbitmq.js";
+import userRoutes from "./src/routes/user.js";
 dotenv.config();
 connectDb();
 connectRabbitMQ();

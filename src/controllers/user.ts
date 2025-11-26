@@ -1,7 +1,7 @@
+import { redisClient } from "../../index.js";
 import { generateToken } from "../config/generateToken.js";
 import { publishToQueue } from "../config/rabbitmq.js";
 import TryCatch from "../config/TryCatch.js";
-import { redisClient } from "../index.js";
 import { AuthenticatedRequest } from "../middleware/isAuth.js";
 import { User } from "../model/User.js";
 
