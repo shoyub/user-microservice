@@ -21,6 +21,7 @@ redisClient
   .catch(console.error);
 
 const app = express();
+app.set("trust proxy", 1); // ✅ required for Render/Vercel/Netlify
 
 app.use(express.json());
 
